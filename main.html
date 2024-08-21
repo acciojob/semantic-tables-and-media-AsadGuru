@@ -4,12 +4,92 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+		ol {
+            margin: 0;
+            padding: 0;
+            list-style-type: decimal;
+        }
+        ol li {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        ol li img, ol li video, ol li audio {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
+        ol li video, ol li audio {
+            margin-top: 10px;
+        }
+    </style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
+
+	<table>
+		<thead>
+			<tr>
+				<th>Roll Number</th>
+				<th>Name</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>101</td>
+				<td>Alice Johnson</td>
+			</tr>
+			<tr>
+				<td>102</td>
+				<td>Bob Smith</td>
+			</tr>
+			<tr>
+				<td>103</td>
+				<td>Carol Davis</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h2>List of Media</h2>
+
+	<ol>
+		<li>
+			Image:
+			<img src="https://picsum.photos/id/123/200/300" alt="Random Image">
+		</li>
+		<li>
+			Video:
+			<video controls>
+				<source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+			</video>
+		</li>
+		<li>
+			Audio:
+			<audio controls>
+				<source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+			</audio>
+		</li>
+	</ol>
 
 </body>
 
